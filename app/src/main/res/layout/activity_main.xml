@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="10"
+    tools:context="camscan.com.adminapp.MainActivity">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:textSize="25dp"
+    android:textAlignment="center"
+    android:textColor="@color/colorPrimary"
+    android:text="Bus Information" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/busDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/busDateOk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Set Date" />
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight=".5"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/addBus"
+            android:text="AddBus"
+            android:layout_width="100dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/BusList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.5"
+        >
+
+    </ListView>
+</LinearLayout>

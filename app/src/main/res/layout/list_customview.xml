@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="10dp"
+        android:background="#f2f2f2"
+        card_view:cardCornerRadius="11dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/traveller_n"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#000000"
+                android:paddingLeft="14dp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:text="XXXXXX Travels"/>
+            <TextView
+                android:id="@+id/plate_no"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10sp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/traveller_n"
+                android:layout_alignParentRight="true"
+                android:text="Plate number: TS12AQ2330"
+                />
+
+            <TextView
+                android:id="@+id/available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#000000"
+                android:paddingLeft="14dp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:layout_centerInParent="true"
+                android:text="Available: xx/xx"
+                />
+            <Button
+                android:id="@+id/track_bus"
+                android:layout_marginLeft="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:background="@drawable/mybutton"
+                android:text="Track Bus"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_below="@id/available"
+                />
+
+            <Button
+                android:id="@+id/scan"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30sp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/mybutton"
+                android:text="Scan"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

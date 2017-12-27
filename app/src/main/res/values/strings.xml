@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AdminApp</string>
+    <string name="title_activity_custom_adapter">CustomAdapter</string>
+</resources>
